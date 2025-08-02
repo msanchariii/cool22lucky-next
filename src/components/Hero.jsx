@@ -21,7 +21,7 @@ const Hero = () => {
                 <BrandonDentaCard />
                 <PaymentCard />
 
-                <div className="bg-white/5 backdrop-blur-lg py-6 px-12 mt-2">
+                <div className="bg-white/5 backdrop-blur-lg py-4 mb-12 px-12 mt-2">
                     <h2 className="text-white text-2xl max-w-3xl p-2 font-light text-center mt-4 mb-12">
                         Generate human-like voices with Retro's AI
                         text-to-speech technology. The best online AI voice
@@ -76,7 +76,7 @@ const Hero = () => {
                         </div>
                         <div className="relative text-white mx-auto md:mx-0 ">
                             <img
-                                className="relative top-4 md:bottom-4 right-0 h-20 w-20 md:h-24 md:w-24"
+                                className="relative md:bottom-4 right-0 h-20 w-20 md:h-24 md:w-24"
                                 src="/assets/arrow.svg"
                                 alt=""
                             />

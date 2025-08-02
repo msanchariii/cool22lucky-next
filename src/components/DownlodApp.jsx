@@ -3,7 +3,7 @@ import { FaApple, FaAppStore } from "react-icons/fa";
 
 export default function DownloadApp() {
     return (
-        <section className="max-w-none">
+        <section className="max-w-none px-0">
             <div className="bg-lavender-lightest px-8 pb-12 md:py-0 grid grid-cols-1 md:grid-cols-2 items-center justify-center ">
                 <img
                     src="/assets/app.png"

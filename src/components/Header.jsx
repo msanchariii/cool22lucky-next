@@ -73,8 +73,8 @@ const Header = () => {
 
             {/* Mobile Menu Overlay */}
             {isMenuOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden">
-                    <div className="fixed top-18 left-1/2 transform -translate-x-1/2 w-[92%] mx-auto bg-white rounded-b-2xl shadow-xl z-50 p-6">
+                <div className="fixed inset-0 bg-opacity-50 bg-white z-40 lg:hidden">
+                    <div className="fixed top-18 left-1/2 transform -translate-x-1/2 w-[92%] mx-auto bg-white rounded-b-2xl z-50 p-6">
                         <nav className="flex flex-col gap-4 mb-6 ">
                             <a
                                 href="#"
