@@ -21,7 +21,7 @@ const features = [
 
 const Features = () => {
     return (
-        <section className=" w-full max-w-none p-4  bg-white text-center">
+        <section className=" w-full max-w-none p-4 bg-white text-center">
             <div className="bg-lavender py-20">
                 {/* Section Header */}
                 <div className="mb-12">
@@ -39,7 +39,7 @@ const Features = () => {
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="border-4 rounded border-white p-8 text-center hover:shadow transition"
+                            className="border-4 rounded-lg border-white p-8 text-center hover:shadow transition"
                         >
                             <div className="mb-6 flex justify-center">
                                 <div className="relative w-full aspect-square">
