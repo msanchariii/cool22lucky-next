@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 
 const FAQs = () => {
@@ -36,55 +37,59 @@ const FAQs = () => {
     };
 
     return (
-        <section className="bg-white py-16 px-4 md:px-16">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-                {/* Left Column */}
-                <div>
-                    <p className="text-xs uppercase text-gray-500 mb-2">
-                        Need Help?
-                    </p>
-                    <h2 className="text-3xl font-bold mb-4">
-                        Frequently Asked Questions Answered For You
-                    </h2>
-                    <p className="text-gray-600 mb-6">
-                        Find quick answers to common questions about our
-                        platform, features, and support. If you need more help,
-                        feel free to reach out to our team anytime.
-                    </p>
-                    <div className="space-y-4 text-sm">
-                        <div className="flex items-center gap-3">
-                            <span className="text-xl">📞</span>
-                            <span>+1 (555) 123-4567</span>
-                        </div>
-                        <div className="flex items-center gap-3">
-                            <span className="text-xl">📧</span>
-                            <span>contact@hirezy.com</span>
+        <div className="p-4">
+            <section className="bg-white max-w-none py-16 px-4 md:px-16">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+                    {/* Left Column */}
+                    <div>
+                        <p className="text-xs uppercase text-gray-500 mb-2">
+                            Need Help?
+                        </p>
+                        <h2 className="text-3xl font-bold mb-4">
+                            Frequently Asked Questions Answered For You
+                        </h2>
+                        <p className="text-gray-600 mb-6">
+                            Find quick answers to common questions about our
+                            platform, features, and support. If you need more
+                            help, feel free to reach out to our team anytime.
+                        </p>
+                        <div className="space-y-4 text-sm">
+                            <div className="flex items-center gap-3">
+                                <span className="text-xl">📞</span>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div className="flex items-center gap-3">
+                                <span className="text-xl">📧</span>
+                                <span>contact@hirezy.com</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                {/* Right Column (Accordion) */}
-                <div className="space-y-4">
-                    {faqs.map((faq, index) => (
-                        <div
-                            key={index}
-                            className="border-b border-gray-300 pb-4 cursor-pointer"
-                            onClick={() => toggle(index)}
-                        >
-                            <div className="flex justify-between items-center text-lg font-medium">
-                                <span>{faq.question}</span>
-                                <span>{openIndex === index ? "−" : "+"}</span>
+                    {/* Right Column (Accordion) */}
+                    <div className="space-y-4">
+                        {faqs.map((faq, index) => (
+                            <div
+                                key={index}
+                                className="border-b border-gray-300 pb-4 cursor-pointer"
+                                onClick={() => toggle(index)}
+                            >
+                                <div className="flex justify-between items-center text-lg font-medium">
+                                    <span>{faq.question}</span>
+                                    <span>
+                                        {openIndex === index ? "−" : "+"}
+                                    </span>
+                                </div>
+                                {openIndex === index && (
+                                    <p className="mt-2 text-gray-600 text-sm">
+                                        {faq.answer}
+                                    </p>
+                                )}
                             </div>
-                            {openIndex === index && (
-                                <p className="mt-2 text-gray-600 text-sm">
-                                    {faq.answer}
-                                </p>
-                            )}
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     );
 };
 

@@ -1,6 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
 
-export const HeaderButton = ({ children, className = "" }) => {
+export const ArrowButton = ({ children, className = "" }) => {
     return (
         <button
             className={`flex items-center px-4 py-2 rounded-full transition font-semibold ${className}`}
