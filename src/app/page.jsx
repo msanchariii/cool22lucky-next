@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import PricingPlans from "@/components/Pricing";
+import VideoPlayer from "@/components/VideoPlayer";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,8 +11,9 @@ export default function Home() {
         <div className="min-h-screen">
             <Header />
             <Hero />
-            <div className="h-screen"></div>
+            <div className="h-12"></div>
             <Features />
+            <VideoPlayer />
             <PricingPlans />
             <Footer />
         </div>
