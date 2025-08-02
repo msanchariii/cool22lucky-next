@@ -1,100 +1,225 @@
 import React from "react";
+import { ArrowRight } from "lucide-react";
 
 const PricingPlans = () => {
+    const pricingData = [
+        {
+            plan: "Starter Plan",
+            description:
+                "Ideal for small teams and startups one morning, when Gregor Samsa horrible vermin.",
+            price: "$29",
+            features: [
+                "Job posting & candidate tracking",
+                "AI-powered resume screening",
+                "Basic onboarding automation",
+                "Employee directory management",
+                "Payroll processing (limited)",
+            ],
+        },
+        {
+            plan: "Growth Plan",
+            description:
+                "Best for growing businesses one morning, when Gregor Samsa horrible vermin.",
+            price: "$79",
+            isPopular: true,
+            features: [
+                "All Starter features",
+                "Advanced AI recruitment tools",
+                "Performance & productivity tracking",
+                "Payroll & benefits automation",
+                "Customizable reporting & analytics",
+                "Live chat & priority support",
+                "Payroll processing (unlimited)",
+            ],
+        },
+        {
+            plan: "Enterprise Plan",
+            description:
+                "Designed for large organizations one morning, when Gregor Samsa horrible vermin.",
+            price: "Custom",
+            features: [
+                "All Growth features",
+                "Unlimited job postings & users",
+                "Dedicated account manager",
+                "API access & custom integrations",
+                "Advanced security & compliance",
+            ],
+        },
+    ];
+
     return (
-        <div className="min-h-screen bg-[#2D2538] text-white px-6 py-16">
-            <div className="text-center mb-12">
-                <p className="uppercase text-sm text-gray-400 tracking-widest">
-                    Flexible Plans
-                </p>
-                <h2 className="text-3xl md:text-4xl font-bold mt-2">
-                    Affordable Pricing For Every Business Size
-                </h2>
-                <div className="mt-4 flex justify-center gap-4">
-                    <button className="bg-[#4B3E57] text-white px-4 py-2 rounded-full">
-                        Monthly
-                    </button>
-                    <button className="bg-[#4B3E57] text-gray-400 px-4 py-2 rounded-full">
-                        Yearly
-                    </button>
+        <section className="p-4 max-w-none w-full ">
+            <div className="min-h-screen bg-[#4a3c52] text-white py-24">
+                <div className="max-w-7xl mx-auto">
+                    {/* Header */}
+                    <div className="text-center mb-16">
+                        <p className="text-gray-300 text-sm tracking-widest uppercase mb-4">
+                            FLEXIBLE PLANS
+                        </p>
+                        <h1 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+                            Affordable Pricing For
+                            <br />
+                            Every Business Size
+                        </h1>
+
+                        {/* Toggle Buttons */}
+                        <div className="flex justify-center gap-2">
+                            <button className="bg-[#5fb3b6] text-white px-6 py-2 rounded-full font-medium">
+                                Monthly
+                            </button>
+                            <button className="bg-[#5a4966] text-gray-300 px-6 py-2 rounded-full font-medium hover:bg-[#6b5577] transition-colors">
+                                Yearly
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* Pricing Cards */}
+                    <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-0">
+                        {/* Starter Plan */}
+                        <div className="bg-white text-gray-800 rounded-2xl p-8 w-full max-w-sm lg:max-w-xs relative lg:mr-2 z-10 shadow-xl">
+                            <h3 className="text-xl font-bold mb-3">
+                                {pricingData[0].plan}
+                            </h3>
+                            <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+                                {pricingData[0].description}
+                            </p>
+
+                            <div className="mb-6">
+                                <span className="text-4xl font-bold">
+                                    {pricingData[0].price}
+                                </span>
+                                <span className="text-gray-500 text-base ml-1">
+                                    / Month
+                                </span>
+                            </div>
+
+                            <ul className="space-y-3 mb-8">
+                                {pricingData[0].features.map(
+                                    (feature, index) => (
+                                        <li
+                                            key={index}
+                                            className="flex items-start gap-3 text-sm"
+                                        >
+                                            <div className="w-4 h-4 bg-gray-800 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
+                                                <svg
+                                                    className="w-2 h-2 text-white"
+                                                    fill="currentColor"
+                                                    viewBox="0 0 8 8"
+                                                >
+                                                    <path d="M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z" />
+                                                </svg>
+                                            </div>
+                                            <span>{feature}</span>
+                                        </li>
+                                    )
+                                )}
+                            </ul>
+
+                            <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 px-6 rounded-full font-medium flex items-center justify-between transition-colors group">
+                                <span>Get Started</span>
+                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            </button>
+                        </div>
+
+                        {/* Growth Plan (Popular) */}
+                        <div className="bg-[#5fb3b6] text-white rounded-2xl p-8 w-full max-w-sm relative z-20 shadow-2xl lg:scale-110">
+                            {/* Popular Badge */}
+                            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                                <span className="bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium">
+                                    Popular ⚡
+                                </span>
+                            </div>
+
+                            <h3 className="text-xl font-bold mb-3 mt-2">
+                                {pricingData[1].plan}
+                            </h3>
+                            <p className="text-teal-100 text-sm mb-6 leading-relaxed">
+                                {pricingData[1].description}
+                            </p>
+
+                            <div className="mb-6">
+                                <span className="text-4xl font-bold">
+                                    {pricingData[1].price}
+                                </span>
+                                <span className="text-teal-100 text-base ml-1">
+                                    / Month
+                                </span>
+                            </div>
+
+                            <ul className="space-y-3 mb-8">
+                                {pricingData[1].features.map(
+                                    (feature, index) => (
+                                        <li
+                                            key={index}
+                                            className="flex items-start gap-3 text-sm"
+                                        >
+                                            <div className="w-4 h-4 bg-white rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
+                                                <svg
+                                                    className="w-2 h-2 text-teal-600"
+                                                    fill="currentColor"
+                                                    viewBox="0 0 8 8"
+                                                >
+                                                    <path d="M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z" />
+                                                </svg>
+                                            </div>
+                                            <span>{feature}</span>
+                                        </li>
+                                    )
+                                )}
+                            </ul>
+
+                            <button className="w-full bg-teal-700 hover:bg-teal-800 text-white py-3 px-6 rounded-full font-medium flex items-center justify-between transition-colors group">
+                                <span>Get Started</span>
+                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            </button>
+                        </div>
+
+                        {/* Enterprise Plan */}
+                        <div className="bg-white text-gray-800 rounded-2xl p-8 w-full max-w-sm lg:max-w-xs relative lg:ml-2 z-10 shadow-xl">
+                            <h3 className="text-xl font-bold mb-3">
+                                {pricingData[2].plan}
+                            </h3>
+                            <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+                                {pricingData[2].description}
+                            </p>
+
+                            <div className="mb-6">
+                                <span className="text-4xl font-bold">
+                                    {pricingData[2].price}
+                                </span>
+                            </div>
+
+                            <ul className="space-y-3 mb-8">
+                                {pricingData[2].features.map(
+                                    (feature, index) => (
+                                        <li
+                                            key={index}
+                                            className="flex items-start gap-3 text-sm"
+                                        >
+                                            <div className="w-4 h-4 bg-gray-800 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
+                                                <svg
+                                                    className="w-2 h-2 text-white"
+                                                    fill="currentColor"
+                                                    viewBox="0 0 8 8"
+                                                >
+                                                    <path d="M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z" />
+                                                </svg>
+                                            </div>
+                                            <span>{feature}</span>
+                                        </li>
+                                    )
+                                )}
+                            </ul>
+
+                            <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 px-6 rounded-full font-medium flex items-center justify-between transition-colors group">
+                                <span>Get Started</span>
+                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div className="relative flex flex-col md:flex-row items-center justify-center gap-6 max-w-6xl mx-auto mt-12">
-                {/* Starter Plan (Back Left) */}
-                <div className="bg-white text-black p-6 rounded-xl w-full md:w-1/3 transform scale-95 -translate-x-4 md:-translate-x-8 z-10 shadow-md">
-                    <h3 className="text-xl font-semibold mb-1">Starter Plan</h3>
-                    <p className="text-sm mb-6">
-                        Ideal for small teams and startups one morning, when
-                        Gregor Samsa horrible vermin.
-                    </p>
-                    <h2 className="text-4xl font-bold mb-4">
-                        $29{" "}
-                        <span className="text-base font-normal">/Month</span>
-                    </h2>
-                    <ul className="space-y-2 text-sm">
-                        <li>✔ Job posting & candidate tracking</li>
-                        <li>✔ AI-powered resume screening</li>
-                        <li>✔ Basic onboarding automation</li>
-                        <li>✔ Employee directory management</li>
-                        <li>✔ Payroll processing (limited)</li>
-                    </ul>
-                    <button className="mt-6 bg-black text-white py-2 px-4 rounded-full">
-                        Get Started
-                    </button>
-                </div>
-
-                {/* Growth Plan (Front Center) */}
-                <div className="bg-[#82D3E7] text-black p-6 rounded-xl w-full md:w-1/3 z-20 shadow-2xl relative transform scale-105">
-                    <span className="absolute top-4 right-4 bg-orange-500 text-white text-xs px-2 py-1 rounded-full">
-                        Popular
-                    </span>
-                    <h3 className="text-xl font-semibold mb-1">Growth Plan</h3>
-                    <p className="text-sm mb-6">
-                        Best for growing businesses one morning, when Gregor
-                        Samsa horrible vermin.
-                    </p>
-                    <h2 className="text-4xl font-bold mb-4">
-                        $79{" "}
-                        <span className="text-base font-normal">/Month</span>
-                    </h2>
-                    <ul className="space-y-2 text-sm">
-                        <li>✔ All Starter features</li>
-                        <li>✔ Advanced AI recruitment tools</li>
-                        <li>✔ Performance & productivity tracking</li>
-                        <li>✔ Payroll & benefits automation</li>
-                        <li>✔ Customizable reporting & analytics</li>
-                        <li>✔ Live chat & priority support</li>
-                        <li>✔ Payroll processing (unlimited)</li>
-                    </ul>
-                    <button className="mt-6 bg-black text-white py-2 px-4 rounded-full">
-                        Get Started
-                    </button>
-                </div>
-
-                {/* Enterprise Plan (Back Right) */}
-                <div className="bg-white text-black p-6 rounded-xl w-full md:w-1/3 transform scale-95 translate-x-4 md:translate-x-8 z-10 shadow-md">
-                    <h3 className="text-xl font-semibold mb-1">
-                        Enterprise Plan
-                    </h3>
-                    <p className="text-sm mb-6">
-                        Designed for large organizations one morning, when
-                        Gregor Samsa horrible vermin.
-                    </p>
-                    <h2 className="text-4xl font-bold mb-4">Custom</h2>
-                    <ul className="space-y-2 text-sm">
-                        <li>✔ All Growth features</li>
-                        <li>✔ Unlimited job postings & users</li>
-                        <li>✔ Dedicated account manager</li>
-                        <li>✔ API access & custom integrations</li>
-                        <li>✔ Advanced security & compliance</li>
-                    </ul>
-                    <button className="mt-6 bg-black text-white py-2 px-4 rounded-full">
-                        Get Started
-                    </button>
-                </div>
-            </div>
-        </div>
+        </section>
     );
 };
 

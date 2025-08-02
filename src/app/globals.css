@@ -9,6 +9,7 @@
     --color-blue: var(--background);
     --color-lavender: #f3f1ff;
     --color-lavender-dark: #e5e1fa;
+    --color-lavender-darkest: #7d68eb;
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
 }
