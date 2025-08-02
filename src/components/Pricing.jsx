@@ -109,7 +109,9 @@ const PricingPlans = () => {
                                                     <path d="M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z" />
                                                 </svg>
                                             </div>
-                                            <span>{feature}</span>
+                                            <span className="text-black">
+                                                {feature}
+                                            </span>
                                         </li>
                                     )
                                 )}
@@ -117,15 +119,18 @@ const PricingPlans = () => {
 
                             <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 px-6 rounded-full font-medium flex items-center justify-between transition-colors group">
                                 <span>Get Started</span>
-                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                {/* <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" /> */}
+                                <div className=" bg-gray-800 text-white rounded-full p-1 group-hover:translate-x-1 transition-transform">
+                                    <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+                                </div>
                             </button>
                         </div>
 
                         {/* Growth Plan (Popular) */}
-                        <div className="bg-[#5fb3b6] text-white rounded-2xl p-8 w-full max-w-sm relative z-20 shadow-2xl lg:scale-110">
+                        <div className="bg-sky text-black rounded-2xl p-8 w-full max-w-sm relative z-20 shadow-2xl lg:scale-110">
                             {/* Popular Badge */}
                             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                                <span className="bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium">
+                                <span className="bg-orange text-white px-4 py-1 rounded-full text-sm font-medium">
                                     Popular ⚡
                                 </span>
                             </div>
@@ -133,7 +138,7 @@ const PricingPlans = () => {
                             <h3 className="text-xl font-bold mb-3 mt-2">
                                 {pricingData[1].plan}
                             </h3>
-                            <p className="text-teal-100 text-sm mb-6 leading-relaxed">
+                            <p className="text-sky-dark font-medium text-sm mb-6 leading-relaxed">
                                 {pricingData[1].description}
                             </p>
 
@@ -141,7 +146,7 @@ const PricingPlans = () => {
                                 <span className="text-4xl font-bold">
                                     {pricingData[1].price}
                                 </span>
-                                <span className="text-teal-100 text-base ml-1">
+                                <span className="text-teal-800 text-base ml-1">
                                     / Month
                                 </span>
                             </div>
@@ -153,9 +158,9 @@ const PricingPlans = () => {
                                             key={index}
                                             className="flex items-start gap-3 text-sm"
                                         >
-                                            <div className="w-4 h-4 bg-white rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
+                                            <div className="w-4 h-4 bg-black rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
                                                 <svg
-                                                    className="w-2 h-2 text-teal-600"
+                                                    className="w-2 h-2 text-white"
                                                     fill="currentColor"
                                                     viewBox="0 0 8 8"
                                                 >
@@ -170,7 +175,9 @@ const PricingPlans = () => {
 
                             <button className="w-full bg-teal-700 hover:bg-teal-800 text-white py-3 px-6 rounded-full font-medium flex items-center justify-between transition-colors group">
                                 <span>Get Started</span>
-                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                <div className=" bg-white text-sky-dark rounded-full p-1 group-hover:translate-x-1 transition-transform">
+                                    <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+                                </div>
                             </button>
                         </div>
 
@@ -213,7 +220,9 @@ const PricingPlans = () => {
 
                             <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 px-6 rounded-full font-medium flex items-center justify-between transition-colors group">
                                 <span>Get Started</span>
-                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                <div className=" bg-gray-800 text-white rounded-full p-1 group-hover:translate-x-1 transition-transform">
+                                    <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+                                </div>
                             </button>
                         </div>
                     </div>

@@ -76,7 +76,7 @@ const Hero = () => {
                 />
             </div>
             <section className="relative top-6 min-h-screen pt-32 flex flex-col items-center justify-center overflow-hidden">
-                <h1 className="text-[7rem] lg:text-[9rem] leading-[1.2] font-medium text-center text-white">
+                <h1 className="text-[7rem] lg:text-[6.5rem] xl:text-[9rem] leading-[1.2] font-medium text-center text-white">
                     AI Voice <br /> Transform <br /> Reality
                 </h1>
                 <BrandonDentaCard />

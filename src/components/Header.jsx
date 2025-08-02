@@ -11,7 +11,7 @@ const Header = () => {
 
     return (
         <>
-            <div className="bg-white fixed top-4 lg:top-12 left-1/2 z-50 transform -translate-x-1/2 flex justify-between container max-w-7xl w-[95%] lg:w-full items-center rounded-full py-3 lg:py-4 px-4 lg:px-12 shadow-lg">
+            <div className="bg-white fixed top-4 lg:top-12 left-1/2 z-50 transform -translate-x-1/2 flex justify-between container md:max-w-4xl lg:max-w-5xl xl:max-w-7xl w-[95%] lg:w-full items-center rounded-full py-3 lg:py-4 px-4 lg:px-12 shadow-lg">
                 <h1 className="text-xl lg:text-2xl font-semibold">Hirezy</h1>
 
                 {/* Desktop Navigation */}

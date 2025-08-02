@@ -46,7 +46,7 @@ const HirezyLandingPage = () => {
                                     HR Today
                                 </span>
 
-                                <div className="bg-white bg-opacity-20 rounded-full px-8 py-4 h-9">
+                                <div className="bg-zinc-200 bg-opacity-20 rounded-full px-8 py-4 h-9">
                                     <span className="opacity-80"></span>
                                 </div>
                             </div>
