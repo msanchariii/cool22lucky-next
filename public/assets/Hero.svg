@@ -2,16 +2,32 @@
 <g clip-path="url(#clip0_135_5)">
 <rect width="551" height="437" fill="url(#paint0_linear_135_5)"/>
 <rect x="-477" y="178.423" width="1342.42" height="530.85" transform="rotate(-4.16174 -477 178.423)" fill="url(#paint1_radial_135_5)"/>
+<g filter="url(#filter0_f_135_5)">
+<ellipse cx="434.104" cy="71.256" rx="343.086" ry="55.1347" transform="rotate(11.8224 434.104 71.256)" fill="white" fill-opacity="0.4"/>
+</g>
+<g filter="url(#filter1_f_135_5)">
+<ellipse cx="89.9832" cy="111.889" rx="129.467" ry="20.8056" transform="rotate(11.8224 89.9832 111.889)" fill="white" fill-opacity="0.5"/>
+</g>
 </g>
 <defs>
+<filter id="filter0_f_135_5" x="9.70229" y="-105.766" width="848.804" height="354.044" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="44.2" result="effect1_foregroundBlur_135_5"/>
+</filter>
+<filter id="filter1_f_135_5" x="-125.21" y="-9.9531" width="430.387" height="243.685" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="44.2" result="effect1_foregroundBlur_135_5"/>
+</filter>
 <linearGradient id="paint0_linear_135_5" x1="410" y1="17.6311" x2="-26.8594" y2="318.74" gradientUnits="userSpaceOnUse">
 <stop stop-color="#1B7DFB"/>
 <stop offset="0.985577" stop-color="#1661F9"/>
 </linearGradient>
 <radialGradient id="paint1_radial_135_5" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32.9543 443.848) rotate(127.235) scale(333.379 656.913)">
-<stop stop-color="#EB8139"/>
+<stop offset="0.0528908" stop-color="#EA823E"/>
 <stop offset="0.298077" stop-color="#D36AE2"/>
-<stop offset="1" stop-color="#160FF8" stop-opacity="0"/>
+<stop offset="1" stop-color="#1A7AFB" stop-opacity="0"/>
 </radialGradient>
 <clipPath id="clip0_135_5">
 <rect width="551" height="437" fill="white"/>
