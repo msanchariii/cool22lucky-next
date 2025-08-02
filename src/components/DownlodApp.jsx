@@ -1,50 +1,59 @@
 import React from "react";
+import { FaApple, FaAppStore } from "react-icons/fa";
 
-export default function EpzikPromo() {
+export default function DownloadApp() {
     return (
-        <div className="bg-[#f4f1fc] p-8 flex flex-col md:flex-row items-center justify-center min-h-screen space-y-8 md:space-y-0 md:space-x-10">
-            {/* Left Image Mockups */}
-            <div className="flex space-x-6">
+        <section className="max-w-none">
+            <div className="bg-[#f4f1fc] px-8 grid grid-cols-1 md:grid-cols-2 items-center justify-center ">
                 <img
-                    src="/mockup1.png"
+                    src="/assets/app.png"
                     alt="App Screen 1"
-                    className="w-40 md:w-60 rounded-xl shadow-lg"
+                    className="h-full w-auto object-contain "
                 />
-                <img
-                    src="/mockup2.png"
-                    alt="App Screen 2"
-                    className="w-40 md:w-60 rounded-xl shadow-lg"
-                />
-            </div>
+                {/* </div> */}
 
-            {/* Right Content */}
-            <div className="text-center md:text-left max-w-md">
-                <div className="text-sm font-medium text-[#a295fa] tracking-wide uppercase">
-                    Data-Driven Coaching
-                </div>
-                <h1 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
-                    Download the{" "}
-                    <span className="text-[#31302f]">Epzik app now!</span>
-                </h1>
-                <p className="text-gray-500 mb-6">
-                    Your ultimate travel partner. Carries the information you
-                    need while travelling.
-                </p>
+                {/* Right Content */}
+                <div className="text-center md:text-left max-w-md">
+                    <h2 className="uppercase w-fit text-sm text-lavender-darkest p-1 rounded-full px-4 bg-linear-to-r from-lavender-dark to-transparent font-semibold tracking-wide">
+                        Data Driven Coaching
+                    </h2>
+                    <h1 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
+                        Download the{" "}
+                        <span className="text-[#31302f]">Epzik app now!</span>
+                    </h1>
+                    <p className="text-gray-500 mb-6">
+                        Your ultimate travel partner. Carries the information
+                        you need while travelling.
+                    </p>
 
-                {/* App Store Buttons */}
-                <div className="flex justify-center md:justify-start space-x-4">
-                    <img
-                        src="/google-play-badge.png"
-                        alt="Google Play"
-                        className="w-32"
-                    />
-                    <img
-                        src="/app-store-badge.png"
-                        alt="App Store"
-                        className="w-32"
-                    />
+                    {/* App Store Buttons */}
+                    <div className="flex justify-center md:justify-start space-x-4">
+                        <button className="bg-white py-2 px-4 flex items-center rounded-lg shadow hover:shadow-md transition">
+                            <img
+                                src="/assets/playstore.jpg"
+                                className="h-8 w-8 inline-block"
+                            />
+                            <div className="flex flex-col text-left ml-2 ">
+                                <p className="text-xs font-medium">
+                                    Download on the
+                                </p>
+
+                                <p className="text-lg font-bold">Play Store</p>
+                            </div>
+                        </button>
+                        <button className="bg-white py-2 px-4 flex items-center rounded-lg shadow hover:shadow-md transition">
+                            <FaApple className="h-8 w-8 inline-block" />
+                            <div className="flex flex-col text-left ml-2 ">
+                                <p className="text-xs font-medium">
+                                    Download on the
+                                </p>
+
+                                <p className="text-lg font-bold">App Store</p>
+                            </div>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
