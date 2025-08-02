@@ -1,33 +1,58 @@
+import Image from "next/image";
 import React from "react";
+import { IoIosArrowForward } from "react-icons/io";
+
+const iconData = [
+    { icon: "/assets/icon1.png", title: "Grammar Check" },
+    { icon: "/assets/icon2.png", title: "Tone Analysis" },
+    { icon: "/assets/icon3.png", title: "Language Suggestions" },
+    { icon: "/assets/icon4.png", title: "Plagiarism Detection" },
+];
+
+const IconCard = ({ icon, children }) => {
+    return (
+        <div className="flex gap-4  max-w-xs">
+            <Image src={icon} alt={icon} width={80} height={80} />
+            <h4 className="text-xl font-medium py-4">{children}</h4>
+        </div>
+    );
+};
 
 const ProofreaderSection = () => {
     return (
         <section className="px-6 py-12 md:flex items-center justify-between bg-white">
-            <div className="max-w-xl space-y-5">
-                <p className="text-sm font-semibold text-indigo-500">
-                    SMART PROOFREADER
-                </p>
-                <h2 className="text-3xl font-bold text-gray-900">
-                    It'll find and fix anything that hurts
+            <div className="max-w-xl gap-y-5 flex flex-col">
+                <h2 className="uppercase w-fit text-sm text-lavender-darkest p-1 rounded-full px-4 bg-linear-to-r from-lavender-dark to-transparent font-semibold tracking-wide">
+                    Features
                 </h2>
-                <p className="text-gray-600">
+                <h3 className="text-5xl font-semibold mt-2 capitalize">
+                    It will find and fix
+                    <span className="font-bold"> anything that hurts</span>
+                </h3>
+                <p className="text-gray-600 max-w-lg">
                     Detect grammar mistakes, improve tone, and get language
                     suggestions powered by AI.
                 </p>
-                <div className="space-y-2 text-gray-700">
-                    <p>✔ Grammar Help</p>
-                    <p>✔ Sentence Clarity</p>
-                    <p>✔ Paraphrasing</p>
+                <div className="grid grid-cols-2 text-gray-700">
+                    {iconData.map(({ icon, title }) => (
+                        <IconCard key={title} icon={icon}>
+                            {title}
+                        </IconCard>
+                    ))}
                 </div>
-                <button className="mt-4 px-6 py-2 bg-black text-white rounded-lg font-medium hover:bg-gray-800 transition">
+                <button className="mt-4 px-6 max-w-fit py-2 bg-black text-white rounded-lg font-medium hover:bg-gray-800 transition">
                     Proof Your Words
+                    <IoIosArrowForward
+                        className="inline-block ml-2"
+                        size={24}
+                    />
                 </button>
             </div>
             <div className="mt-10 md:mt-0 md:ml-10">
                 <img
-                    src="/images/proofreader.png"
+                    src="/assets/img1.png"
                     alt="Proofreading AI"
-                    className="w-full max-w-md rounded-lg shadow-lg"
+                    className="w-full"
                 />
             </div>
         </section>

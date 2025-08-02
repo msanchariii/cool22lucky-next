@@ -1,25 +1,26 @@
 import React from "react";
+import { ArrowButton } from "./Button";
 
 const AccessibilitySection = () => {
     return (
         <section className="px-6 py-16 bg-white grid md:grid-cols-2 gap-10 items-center">
-            <div>
-                <h2 className="text-3xl font-bold text-gray-900">
+            <div className="flex flex-col gap-8">
+                <h2 className="text-5xl font-bold text-gray-900">
                     Making content available for all audiences.
                 </h2>
-                <p className="mt-4 text-gray-600">
+                <p className="mt-4 text-gray-600 max-w-md">
                     From text-to-speech to powerful AI dubbing, our tools
                     restore voices and information fluency through more natural
                     digital interfaces.
                 </p>
-                <button className="mt-6 px-5 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition">
+                <ArrowButton className="border-2 max-w-fit">
                     Explore More
-                </button>
+                </ArrowButton>
             </div>
 
-            <div className="p-4 bg-yellow-100 rounded-xl shadow flex items-center justify-center">
+            <div className="p-4 flex items-center justify-center">
                 <img
-                    src="/images/accessibility.png"
+                    src="/assets/img3.png"
                     alt="AI Accessibility Tools"
                     className="max-w-full h-auto"
                 />

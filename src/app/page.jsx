@@ -1,9 +1,13 @@
+import AccessibilitySection from "@/components/AccessibilitySection";
+import FAQs from "@/components/Contact";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import PricingPlans from "@/components/Pricing";
+import ProofreaderSection from "@/components/ProofreaderSection";
 import VideoPlayer from "@/components/VideoPlayer";
+import VoiceGeneratorSection from "@/components/VoiceGeneratorSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -14,7 +18,11 @@ export default function Home() {
             <div className="h-12"></div>
             <Features />
             <VideoPlayer />
+            <ProofreaderSection />
+            <VoiceGeneratorSection />
+            <AccessibilitySection />
             <PricingPlans />
+            <FAQs />
             <Footer />
         </div>
     );

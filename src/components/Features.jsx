@@ -28,10 +28,10 @@ const Features = () => {
                     <h2 className="uppercase text-sm text-lavender-darkest p-1 rounded-full px-4 bg-linear-to-r from-lavender-dark w-fit mx-auto to-transparent font-semibold tracking-wide">
                         Features
                     </h2>
-                    <h2 className="text-5xl font-semibold mt-2 capitalize">
+                    <h3 className="text-5xl font-semibold mt-2 capitalize">
                         Why choose
                         <span className="font-bold"> our app</span>
-                    </h2>
+                    </h3>
                 </div>
 
                 {/* Responsive Grid */}
