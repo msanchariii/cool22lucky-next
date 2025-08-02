@@ -82,15 +82,15 @@ const Hero = () => {
                 <BrandonDentaCard />
                 <PaymentCard />
 
-                <div className="bg-white/5 backdrop-blur-lg p-6 mt-2">
+                <div className="bg-white/5 backdrop-blur-lg py-6 px-12 mt-2">
                     <h2 className="text-white text-2xl max-w-3xl font-light text-center mt-4 mb-12">
                         Generate human-like voices with Retro's AI
                         text-to-speech technology. The best online AI voice
                         generator
                     </h2>
                     {/* client cards */}
-                    <div className="flex flex-row">
-                        <div className="flex relative bg-white h-18 items-center justify-between rounded-full py-3 mx-auto px-6 shadow-lg w-[450px]">
+                    <div className="flex flex-row ">
+                        <div className="flex relative bg-white self-end h-18 items-center justify-between rounded-full py-3 mx-auto px-6 shadow-lg w-[450px]">
                             {/* Avatars */}
                             <div className="flex -space-x-3">
                                 <Image
@@ -142,7 +142,7 @@ const Hero = () => {
                                 alt=""
                             />
                             <p>
-                                <span className="text-3xl">23,00000+</span>{" "}
+                                <span className="text-4xl">13,00000+</span>{" "}
                                 <br />
                                 <span className="opacity-90">
                                     Voices Generated

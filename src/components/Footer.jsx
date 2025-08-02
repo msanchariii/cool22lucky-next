@@ -3,7 +3,7 @@ import { ArrowButton } from "./Button";
 
 const HirezyLandingPage = () => {
     return (
-        <div className="p-4 ">
+        <div className=" ">
             <section className="min-h-screen max-w-none bg-gradient-to-br from-teal-600 to-teal-700 text-white">
                 {/* Header */}
                 <div className="px-8 py-6 ">

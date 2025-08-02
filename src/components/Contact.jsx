@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import { LuPhoneCall } from "react-icons/lu";
+import { MdOutlineMail } from "react-icons/md";
 
 const FAQs = () => {
     const [openIndex, setOpenIndex] = useState(0); // First FAQ open by default
@@ -45,22 +47,41 @@ const FAQs = () => {
                         <p className="text-xs uppercase text-gray-500 mb-2">
                             Need Help?
                         </p>
-                        <h2 className="text-3xl font-bold mb-4">
-                            Frequently Asked Questions Answered For You
+                        <h2 className="text-4xl font-semibold mb-4">
+                            Frequently Asked <br /> Questions Answered <br />{" "}
+                            For You
                         </h2>
-                        <p className="text-gray-600 mb-6">
+                        <p className="text-gray-600 mb-6 max-w-lg">
                             Find quick answers to common questions about our
                             platform, features, and support. If you need more
                             help, feel free to reach out to our team anytime.
                         </p>
                         <div className="space-y-4 text-sm">
                             <div className="flex items-center gap-3">
-                                <span className="text-xl">📞</span>
-                                <span>+1 (555) 123-4567</span>
+                                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center border-2 p-1 border-gray-200">
+                                    <LuPhoneCall className="w-5 h-5 text-gray-600" />
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="text-gray-500 font-normal">
+                                        Call Us
+                                    </span>
+                                    <span className="font-semibold">
+                                        +1 (555) 123-4567
+                                    </span>
+                                </div>
                             </div>
                             <div className="flex items-center gap-3">
-                                <span className="text-xl">📧</span>
-                                <span>contact@hirezy.com</span>
+                                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center border-2 p-1 border-gray-200">
+                                    <MdOutlineMail className="w-5 h-5 text-gray-600" />
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="text-gray-500 font-normal">
+                                        Mail Us
+                                    </span>
+                                    <span className="font-semibold">
+                                        contact@hirezy.com
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
