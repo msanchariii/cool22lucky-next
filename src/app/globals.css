@@ -7,9 +7,18 @@
 
 @theme {
     --color-blue: var(--background);
+    --color-lavender-light: #f0d3ff;
     --color-lavender: #f3f1ff;
     --color-lavender-dark: #e5e1fa;
     --color-lavender-darkest: #7d68eb;
+    --color-burgendy: #3a2c39;
+    --color-sky: #69d1d4;
+    --color-sky-dark: #35797a;
+    --color-sky-light: #a8d1ff;
+    --color-sky-lightest: #f1f4f9;
+    --color-peacock: #89b0b2;
+    --color-orange: #fa6932;
+    --color-golden: #fff4ce;
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
 }
