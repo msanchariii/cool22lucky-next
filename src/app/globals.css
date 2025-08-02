@@ -30,7 +30,7 @@
 
 @layer base {
     section {
-        @apply bg-pink-200/0 w-full max-w-7xl mx-auto p-6;
+        @apply bg-pink-200/0 w-full mx-auto p-6 max-w-6xl mx-auto;
     }
     button {
         @apply cursor-pointer;

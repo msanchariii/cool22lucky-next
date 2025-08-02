@@ -5,30 +5,30 @@ import { FaPaypal } from "react-icons/fa";
 const Hero = () => {
     return (
         <>
-            <div className="absolute inset-0 lg:inset-4 h-[160vh] flex items-center justify-center">
-                <Image
-                    src="/assets/Hero.svg"
-                    alt="Hero Image"
-                    fill
-                    className="object-cover absolute top-4 -z-10 lg:rounded-3xl"
-                    priority
-                />
-            </div>
-            <section className="relative top-6 min-h-screen pt-32 flex flex-col items-center justify-center overflow-hidden">
-                <h1 className="text-[7rem] lg:text-[6.5rem] xl:text-[9rem] leading-[1.2] font-medium text-center text-white">
+            <section className="relative max-w-none min-h-screen pt-32 flex flex-col items-center justify-center overflow-hidden">
+                <div className="absolute inset-0 lg:inset-4 -z-10">
+                    <Image
+                        src="/assets/Hero.svg"
+                        alt="Hero Image"
+                        fill
+                        className="object-cover relative inset-12 -z-10 lg:rounded-3xl"
+                        priority
+                    />
+                </div>
+                <h1 className="text-[6rem] md:text-[7rem] lg:text-[6.5rem] p-2 xl:text-[9rem] leading-[1.2] font-medium text-center text-white">
                     AI Voice <br /> Transform <br /> Reality
                 </h1>
                 <BrandonDentaCard />
                 <PaymentCard />
 
                 <div className="bg-white/5 backdrop-blur-lg py-6 px-12 mt-2">
-                    <h2 className="text-white text-2xl max-w-3xl font-light text-center mt-4 mb-12">
+                    <h2 className="text-white text-2xl max-w-3xl p-2 font-light text-center mt-4 mb-12">
                         Generate human-like voices with Retro's AI
                         text-to-speech technology. The best online AI voice
                         generator
                     </h2>
                     {/* client cards */}
-                    <div className="flex flex-row ">
+                    <div className="flex flex-col md:flex-row ">
                         <div className="flex relative bg-white self-end h-18 items-center justify-between rounded-full py-3 mx-auto px-6 shadow-lg w-[450px]">
                             {/* Avatars */}
                             <div className="flex -space-x-3">
@@ -74,9 +74,9 @@ const Hero = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="relative text-white">
+                        <div className="relative text-white mx-auto md:mx-0 ">
                             <img
-                                className="relative bottom-4 right-0 h-24 w-24"
+                                className="relative top-4 md:bottom-4 right-0 h-20 w-20 md:h-24 md:w-24"
                                 src="/assets/arrow.svg"
                                 alt=""
                             />
@@ -97,7 +97,7 @@ const Hero = () => {
 
 const BrandonDentaCard = () => {
     return (
-        <div className="absolute w-64 bg-white rounded-xl shadow-md p-5 top-[35%] left-0 hidden lg:block    ">
+        <div className="absolute w-64 bg-white rounded-xl shadow-md p-5 top-[35%] left-8 hidden lg:block    ">
             {/* Avatar */}
             <div className="w-12 h-12 bg-gray-300 rounded-full mb-4"></div>
 
@@ -112,8 +112,8 @@ const BrandonDentaCard = () => {
 
             {/* Placeholder Lines */}
             <div className="space-y-2">
-                <div className="h-2 bg-gray-200 rounded-full w-4/5"></div>
-                <div className="h-2 bg-gray-200 rounded-full w-2/3"></div>
+                <div className="h-4 bg-linear-to-r from-gray-50 to-gray-200 rounded-full w-4/5"></div>
+                <div className="h-4 bg-linear-to-r from-gray-50 to-gray-200 rounded-full w-2/3"></div>
             </div>
         </div>
     );
@@ -121,7 +121,7 @@ const BrandonDentaCard = () => {
 
 const PaymentCard = () => {
     return (
-        <div className="w-72 bg-white rounded-xl shadow-md p-5 absolute top-[30%] right-0 hidden lg:block">
+        <div className="w-72 bg-white rounded-xl shadow-md p-5 absolute top-[30%] right-8 hidden lg:block">
             {/* Top Section: Avatar + Name + PayPal */}
             <div className="flex justify-between items-center mb-4">
                 <div className="flex items-center gap-3">

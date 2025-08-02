@@ -16,7 +16,6 @@ export default function Home() {
         <div className="min-h-screen">
             <Header />
             <Hero />
-            <div className="h-12"></div>
             <Features />
             <ProofreaderSection />
             <VoiceGeneratorSection />
