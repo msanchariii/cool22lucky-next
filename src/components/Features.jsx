@@ -35,7 +35,7 @@ const Features = () => {
                 </div>
 
                 {/* Responsive Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-12 lg:px-24">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-12 lg:px-24">
                     {features.map((feature, index) => (
                         <div
                             key={index}

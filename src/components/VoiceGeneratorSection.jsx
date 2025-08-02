@@ -11,7 +11,7 @@ const VoiceGeneratorSection = () => {
                     alt="Voice Generator"
                     width={500}
                     height={300}
-                    className="object-cover"
+                    className="object-cover mx-auto md:mx-0"
                 />
             </div>
 

@@ -26,7 +26,7 @@ const IconCard = ({ icon, children }) => {
 
 const ProofreaderSection = () => {
     return (
-        <section className="px-6 py-12 md:flex items-center justify-between bg-white">
+        <section className="px-6 py-12 md:flex flex-col md:flex-row items-center justify-between bg-white">
             <div className="max-w-xl gap-y-5 flex flex-col">
                 <h2 className="uppercase w-fit text-sm text-lavender-darkest p-1 rounded-full px-4 bg-linear-to-r from-lavender-dark to-transparent font-semibold tracking-wide">
                     Data Driven Coaching

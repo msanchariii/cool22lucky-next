@@ -4,17 +4,17 @@ import { FaApple, FaAppStore } from "react-icons/fa";
 export default function DownloadApp() {
     return (
         <section className="max-w-none">
-            <div className="bg-[#f4f1fc] px-8 grid grid-cols-1 md:grid-cols-2 items-center justify-center ">
+            <div className="bg-lavender-lightest px-8 pb-12 md:py-0 grid grid-cols-1 md:grid-cols-2 items-center justify-center ">
                 <img
                     src="/assets/app.png"
                     alt="App Screen 1"
-                    className="h-full w-auto object-contain "
+                    className="h-full w-auto object-contain mb-12 md:mb-0"
                 />
                 {/* </div> */}
 
                 {/* Right Content */}
-                <div className="text-center md:text-left max-w-md flex flex-col gap-6">
-                    <h2 className="uppercase w-fit text-sm text-lavender-darkest p-1 rounded-full px-4 bg-linear-to-r from-lavender-dark to-transparent font-semibold tracking-wide">
+                <div className="text-center  mx-auto md:text-left max-w-md flex flex-col gap-6">
+                    <h2 className="uppercase w-fit mx-auto md:mx-0 text-sm text-lavender-darkest p-1 rounded-full px-4 bg-linear-to-r from-lavender-dark to-transparent font-semibold tracking-wide">
                         Data Driven Coaching
                     </h2>
                     <h1 className="text-3xl md:text-4xl font-semibold mt-2 mb-4">

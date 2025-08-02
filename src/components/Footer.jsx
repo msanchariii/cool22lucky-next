@@ -1,6 +1,30 @@
 import React from "react";
 import { ArrowButton } from "./Button";
 
+const footerLinks = {
+    company: [
+        { name: "Home", link: "#" },
+        { name: "About Us", link: "#" },
+        { name: "Services", link: "#" },
+        { name: "Pricing", link: "#" },
+        { name: "Career", link: "#" },
+    ],
+    resources: [
+        { name: "Blog Articles", link: "#" },
+        { name: "Case Studies", link: "#" },
+        { name: "Help Center", link: "#" },
+        { name: "Privacy Policy", link: "#" },
+        { name: "Terms of Service", link: "#" },
+    ],
+    platform: [
+        { name: "Time Tracking", link: "#" },
+        { name: "Reports", link: "#" },
+        { name: "Payroll", link: "#" },
+        { name: "Integrations", link: "#" },
+        { name: "Compliance", link: "#" },
+    ],
+};
+
 const HirezyLandingPage = () => {
     return (
         <div className=" ">
@@ -15,7 +39,7 @@ const HirezyLandingPage = () => {
                             </h1>
 
                             <div className="flex items-center gap-4 mb-8">
-                                <ArrowButton className="bg-yellow-200 text-black px-4 py-2 rounded-full flex items-center gap-2 font-semibold">
+                                <ArrowButton className="bg-golden text-black px-4 py-2 rounded-full flex items-center gap-2 font-semibold">
                                     Get A Demo
                                 </ArrowButton>
                                 <span className="text-white text-4xl font-bold leading-tight">
@@ -23,11 +47,11 @@ const HirezyLandingPage = () => {
                                 </span>
 
                                 <div className="bg-white bg-opacity-20 rounded-full px-8 py-4 h-9">
-                                    <span className="text-sm opacity-80"></span>
+                                    <span className="opacity-80"></span>
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-2 text-sm opacity-80">
+                            <div className="flex items-center gap-2 opacity-80">
                                 <span>Visit Our Website</span>
                                 <div className="flex-1 h-px bg-white opacity-30"></div>
                                 <span>https://hirezy.com</span>
@@ -41,12 +65,12 @@ const HirezyLandingPage = () => {
                                 <h3 className="font-semibold mb-4 opacity-70">
                                     Company
                                 </h3>
-                                <ul className="space-y-3 opacity-60">
-                                    <li>Home</li>
-                                    <li>About Us</li>
-                                    <li>Services</li>
-                                    <li>Pricing</li>
-                                    <li>Career</li>
+                                <ul className="space-y-3 opacity-90 text-white">
+                                    {footerLinks.company.map((link) => (
+                                        <li key={link.name}>
+                                            <a href={link.link}>{link.name}</a>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
 
@@ -55,12 +79,12 @@ const HirezyLandingPage = () => {
                                 <h3 className="font-semibold mb-4 opacity-70">
                                     Resources
                                 </h3>
-                                <ul className="space-y-3 opacity-60">
-                                    <li>Blog Articles</li>
-                                    <li>Case Studies</li>
-                                    <li>Help Center</li>
-                                    <li>Privacy Policy</li>
-                                    <li>Terms of Service</li>
+                                <ul className="space-y-3 opacity-90 text-white">
+                                    {footerLinks.resources.map((link) => (
+                                        <li key={link.name}>
+                                            <a href={link.link}>{link.name}</a>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
 
@@ -69,12 +93,12 @@ const HirezyLandingPage = () => {
                                 <h3 className="font-semibold mb-4 opacity-70">
                                     Platform
                                 </h3>
-                                <ul className="space-y-3 opacity-60">
-                                    <li>Time Tracking</li>
-                                    <li>Reports</li>
-                                    <li>Payroll</li>
-                                    <li>Integrations</li>
-                                    <li>Compliance</li>
+                                <ul className="space-y-3 opacity-90 text-white">
+                                    {footerLinks.platform.map((link) => (
+                                        <li key={link.name}>
+                                            <a href={link.link}>{link.name}</a>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         </div>
@@ -87,7 +111,7 @@ const HirezyLandingPage = () => {
                     <div className="px-8 mt-12 border-r border-gray-300/40 col-span-2 ">
                         {/* Large Hirezy logo */}
                         <div className="mb-8">
-                            <h2 className="text-9xl font-semibold text-pink-200 opacity-90 tracking-wider">
+                            <h2 className="text-9xl font-semibold text-lavender-light opacity-90 tracking-wider">
                                 Hirezy
                             </h2>
                         </div>
@@ -135,13 +159,13 @@ const HirezyLandingPage = () => {
                                     <h4 className="text-sm opacity-70 mb-3">
                                         Subscribe Our Newsletter
                                     </h4>
-                                    <div className="flex items-center gap-2">
+                                    <div className="flex items-center gap-2 border border-white border-opacity-20 rounded-full px-3 py-2 w-fit ">
                                         <input
                                             type="email"
                                             placeholder="Your Email Address"
-                                            className="bg-white bg-opacity-10 border border-white border-opacity-20 rounded px-3 py-2 text-sm placeholder-white placeholder-opacity-50 text-white"
+                                            className="bg-transparent bg-opacity-10  border-white border-opacity-20 rounded px-3 py-2 text-sm placeholder-white placeholder-opacity-50 text-white focus:ring-0 focus:ring-offset-0 focus:border-0 focus:outline-0"
                                         />
-                                        <button className="bg-white text-black rounded-full w-8 h-8 flex items-center justify-center">
+                                        <button className="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center">
                                             <span className="text-sm">→</span>
                                         </button>
                                     </div>
@@ -149,7 +173,7 @@ const HirezyLandingPage = () => {
 
                                 {/* Contact Information */}
                                 <div>
-                                    <h4 className="text-sm opacity-70 mb-2">
+                                    <h4 className=" opacity-70 mb-2">
                                         Contact Information
                                     </h4>
                                     <div className="flex gap-6 text-xs opacity-60">
