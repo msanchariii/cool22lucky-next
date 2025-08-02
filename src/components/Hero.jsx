@@ -15,7 +15,7 @@ const Hero = () => {
                         priority
                     />
                 </div>
-                <h1 className="text-[6rem] md:text-[7rem] lg:text-[6.5rem] p-2 xl:text-[9rem] leading-[1.2] font-medium text-center text-white">
+                <h1 className="text-[5rem] sm:text-[6rem] md:text-[7rem] lg:text-[6.5rem] p-2 xl:text-[9rem] leading-[1.2] font-medium text-center text-white">
                     AI Voice <br /> Transform <br /> Reality
                 </h1>
                 <BrandonDentaCard />
@@ -29,7 +29,7 @@ const Hero = () => {
                     </h2>
                     {/* client cards */}
                     <div className="flex flex-col md:flex-row ">
-                        <div className="flex relative bg-white self-end h-18 items-center justify-between rounded-full py-3 mx-auto px-6 shadow-lg w-[450px]">
+                        <div className="flex relative bg-white self-end h-18 items-center justify-between rounded-full py-3 mx-auto px-6 shadow-lg w-[400px] sm:w-[450px]">
                             {/* Avatars */}
                             <div className="flex -space-x-3">
                                 <Image
@@ -76,7 +76,7 @@ const Hero = () => {
                         </div>
                         <div className="relative text-white mx-auto md:mx-0 ">
                             <img
-                                className="relative md:bottom-4 right-0 h-20 w-20 md:h-24 md:w-24"
+                                className="relative top-2 md:bottom-4 right-0 h-18 w-18 md:h-24 md:w-24"
                                 src="/assets/arrow.svg"
                                 alt=""
                             />
