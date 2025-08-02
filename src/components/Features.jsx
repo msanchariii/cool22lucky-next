@@ -49,14 +49,16 @@ const Features = () => {
                                         // width={220}
                                         // height={180}
                                         fill
-                                        className="rounded-xl"
+                                        className="rounded-xl object-cover"
                                     />
                                 </div>
                             </div>
                             <h3 className="font-semibold text-xl mb-2">
                                 {feature.title}
                             </h3>
-                            <p className="text-gray-500 ">{feature.desc}</p>
+                            <p className="text-gray-500 font-medium">
+                                {feature.desc}
+                            </p>
                         </div>
                     ))}
                 </div>

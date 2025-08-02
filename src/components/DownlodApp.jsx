@@ -13,13 +13,15 @@ export default function DownloadApp() {
                 {/* </div> */}
 
                 {/* Right Content */}
-                <div className="text-center md:text-left max-w-md">
+                <div className="text-center md:text-left max-w-md flex flex-col gap-6">
                     <h2 className="uppercase w-fit text-sm text-lavender-darkest p-1 rounded-full px-4 bg-linear-to-r from-lavender-dark to-transparent font-semibold tracking-wide">
                         Data Driven Coaching
                     </h2>
-                    <h1 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
+                    <h1 className="text-3xl md:text-4xl font-semibold mt-2 mb-4">
                         Download the{" "}
-                        <span className="text-[#31302f]">Epzik app now!</span>
+                        <span className="text-[#31302f] font-bold">
+                            Epzik app now!
+                        </span>
                     </h1>
                     <p className="text-gray-500 mb-6">
                         Your ultimate travel partner. Carries the information

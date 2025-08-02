@@ -18,11 +18,11 @@ export default function Home() {
             <Hero />
             <div className="h-12"></div>
             <Features />
-            <VideoPlayer />
             <ProofreaderSection />
             <VoiceGeneratorSection />
             <AccessibilitySection />
             <DownloadApp />
+            <VideoPlayer />
             <PricingPlans />
             <FAQs />
             <Footer />
