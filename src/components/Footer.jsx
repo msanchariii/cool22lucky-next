@@ -1,30 +1,27 @@
 import React from "react";
+import { HeaderButton } from "./Button";
 
 const HirezyLandingPage = () => {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-teal-600 to-teal-700 text-white">
+        <section className="min-h-screen bg-gradient-to-br from-teal-600 to-teal-700 text-white">
             {/* Header */}
-            <header className="px-8 py-6">
+            <header className="px-8 py-6 ">
                 <div className="flex justify-between items-start">
                     {/* Left side - Main heading and CTA */}
                     <div className="flex-1 max-w-md">
                         <h1 className="text-4xl font-bold mb-6 leading-tight">
                             Start Streamlining Your
-                            <br />
-                            <span className="text-white">HR Today</span>
+
+
                         </h1>
 
                         <div className="flex items-center gap-4 mb-8">
-                            <button className="bg-yellow-400 text-black px-4 py-2 rounded-full flex items-center gap-2 font-semibold">
+                            <HeaderButton className="bg-yellow-200 text-black px-4 py-2 rounded-full flex items-center gap-2 font-semibold">
                                 Get A Demo
-                                <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center">
-                                    <span className="text-white text-xs">
-                                        ▶
-                                    </span>
-                                </div>
-                            </button>
+                            </HeaderButton>
+                            <span className="text-white text-4xl font-bold leading-tight">HR Today</span>
 
-                            <div className="bg-white bg-opacity-20 rounded-full px-6 py-2">
+                            <div className="bg-white bg-opacity-20 rounded-full px-8 py-4 h-9">
                                 <span className="text-sm opacity-80"></span>
                             </div>
                         </div>
@@ -82,29 +79,27 @@ const HirezyLandingPage = () => {
                     </div>
                 </div>
             </header>
+            <hr
+                className="border-t border-gray-300/40 border-opacity-20 mx-8 mt-8"
+            />
 
             {/* Main content */}
-            <main className="px-8 mt-16">
-                {/* Large Hirezy logo */}
-                <div className="mb-8">
-                    <h2 className="text-9xl font-bold text-pink-200 opacity-90 tracking-wider">
-                        Hirezy
-                    </h2>
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 py-12">
+                <div className="px-8 mt-12 border-r border-gray-300/40 col-span-2 ">
+                    {/* Large Hirezy logo */}
+                    <div className="mb-8">
+                        <h2 className="text-9xl font-semibold text-pink-200 opacity-90 tracking-wider">
+                            Hirezy
+                        </h2>
+                    </div>
 
-                {/* Description text */}
-                <p className="text-sm opacity-70 max-w-2xl mb-16 leading-relaxed">
-                    Sitting on his armour-like back, and if he lifted his head a
-                    little he could see his brown belly, slightly domed and
-                    divided by arches into stiff sections... when Gregor Samsa
-                    woke from dreams.
-                </p>
-            </main>
-
-            {/* Footer */}
-            <footer className="px-8 py-8">
-                <div className="flex justify-between items-end">
-                    {/* Left side - Copyright and links */}
+                    {/* Description text */}
+                    <p className="text-sm opacity-70 max-w-2xl mb-16 leading-relaxed">
+                        Sitting on his armour-like back, and if he lifted his head a
+                        little he could see his brown belly, slightly domed and
+                        divided by arches into stiff sections... when Gregor Samsa
+                        woke from dreams.
+                    </p>
                     <div className="flex items-center gap-8 text-sm opacity-60">
                         <span>© 2024 All Right Reserved by Hirezy</span>
                         <div className="flex gap-6">
@@ -114,53 +109,61 @@ const HirezyLandingPage = () => {
                         </div>
                     </div>
 
-                    {/* Right side - Social and contact info */}
-                    <div className="text-right">
-                        {/* Follow Us section */}
-                        <div className="mb-6">
-                            <h4 className="text-sm opacity-70 mb-2">
-                                Follow Us
-                            </h4>
-                            <div className="flex gap-4 text-xs opacity-60 justify-end">
-                                <span>LinkedIn</span>
-                                <span>Facebook</span>
-                                <span>Instagram</span>
-                                <span>Youtube</span>
-                                <span>Twitter/X</span>
-                            </div>
-                        </div>
+                </div>
 
-                        {/* Newsletter section */}
-                        <div className="mb-6">
-                            <h4 className="text-sm opacity-70 mb-3">
-                                Subscribe Our Newsletter
-                            </h4>
-                            <div className="flex items-center gap-2">
-                                <input
-                                    type="email"
-                                    placeholder="Your Email Address"
-                                    className="bg-white bg-opacity-10 border border-white border-opacity-20 rounded px-3 py-2 text-sm placeholder-white placeholder-opacity-50 text-white"
-                                />
-                                <button className="bg-white text-black rounded-full w-8 h-8 flex items-center justify-center">
-                                    <span className="text-sm">→</span>
-                                </button>
+                {/* Footer */}
+                <div className="px-8 py-8">
+                    <div className="flex justify-between items-end ">
+                        {/* Left side - Copyright and links */}
+                        
+                        {/* Right side - Social and contact info */}
+                        <div className="">
+                            {/* Follow Us section */}
+                            <div className="mb-6">
+                                <h4 className="text-sm opacity-70 mb-2">
+                                    Follow Us
+                                </h4>
+                                <div className="flex gap-4 text-xs opacity-60 justify-end">
+                                    <span>LinkedIn</span>
+                                    <span>Facebook</span>
+                                    <span>Instagram</span>
+                                    <span>Youtube</span>
+                                    <span>Twitter/X</span>
+                                </div>
                             </div>
-                        </div>
 
-                        {/* Contact Information */}
-                        <div>
-                            <h4 className="text-sm opacity-70 mb-2">
-                                Contact Information
-                            </h4>
-                            <div className="flex gap-6 text-xs opacity-60">
-                                <span> +1 (555) 123-4567</span>
-                                <span> 123 Business Street</span>
+                            {/* Newsletter section */}
+                            <div className="mb-6">
+                                <h4 className="text-sm opacity-70 mb-3">
+                                    Subscribe Our Newsletter
+                                </h4>
+                                <div className="flex items-center gap-2">
+                                    <input
+                                        type="email"
+                                        placeholder="Your Email Address"
+                                        className="bg-white bg-opacity-10 border border-white border-opacity-20 rounded px-3 py-2 text-sm placeholder-white placeholder-opacity-50 text-white"
+                                    />
+                                    <button className="bg-white text-black rounded-full w-8 h-8 flex items-center justify-center">
+                                        <span className="text-sm">→</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            {/* Contact Information */}
+                            <div>
+                                <h4 className="text-sm opacity-70 mb-2">
+                                    Contact Information
+                                </h4>
+                                <div className="flex gap-6 text-xs opacity-60">
+                                    <span> +1 (555) 123-4567</span>
+                                    <span> 123 Business Street</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </section>
     );
 };
 
