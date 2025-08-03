@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
+import { ArrowButton } from "./Button";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,12 +51,12 @@ const Header = () => {
 
                 {/* Desktop Buttons */}
                 <div className="hidden lg:flex gap-4">
-                    <HeaderButton className="bg-[#f1f4f9] hover:bg-gray-200">
+                    <ArrowButton className="bg-[#f1f4f9] hover:bg-gray-200">
                         Get Started
-                    </HeaderButton>
-                    <HeaderButton className="bg-[#add1ff] hover:bg-blue-200">
+                    </ArrowButton>
+                    <ArrowButton className="bg-[#add1ff] hover:bg-blue-200">
                         Request A Demo
-                    </HeaderButton>
+                    </ArrowButton>
                 </div>
 
                 {/* Mobile Hamburger */}
@@ -114,39 +115,17 @@ const Header = () => {
                         </nav>
 
                         <div className="flex flex-col gap-3">
-                            <MobileButton className="bg-[#f1f4f9] hover:bg-gray-200">
+                            <ArrowButton className="bg-[#f1f4f9] hover:bg-gray-200">
                                 Get Started
-                            </MobileButton>
-                            <MobileButton className="bg-[#add1ff] hover:bg-blue-200">
+                            </ArrowButton>
+                            <ArrowButton className="bg-[#add1ff] hover:bg-blue-200">
                                 Request A Demo
-                            </MobileButton>
+                            </ArrowButton>
                         </div>
                     </div>
                 </div>
             )}
         </>
-    );
-};
-
-const HeaderButton = ({ children, className = "" }) => {
-    return (
-        <button
-            className={`flex items-center px-4 py-2 rounded-full transition font-semibold ${className}`}
-        >
-            {children}
-            <ArrowRight className="inline ml-2 bg-black text-white p-2 rounded-full h-8 w-8" />
-        </button>
-    );
-};
-
-const MobileButton = ({ children, className = "" }) => {
-    return (
-        <button
-            className={`flex items-center justify-center px-4 py-3 rounded-full transition font-semibold w-full ${className}`}
-        >
-            {children}
-            <ArrowRight className="inline ml-2 bg-black text-white p-1.5 rounded-full h-6 w-6" />
-        </button>
     );
 };
 

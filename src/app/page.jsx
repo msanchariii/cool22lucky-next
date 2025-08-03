@@ -1,5 +1,5 @@
 import AccessibilitySection from "@/components/AccessibilitySection";
-import FAQs from "@/components/Contact";
+import FAQs from "@/components/FAQ";
 import DownloadApp from "@/components/DownlodApp";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
@@ -9,11 +9,10 @@ import PricingPlans from "@/components/Pricing";
 import ProofreaderSection from "@/components/ProofreaderSection";
 import VideoPlayer from "@/components/VideoPlayer";
 import VoiceGeneratorSection from "@/components/VoiceGeneratorSection";
-import Image from "next/image";
 
 export default function Home() {
     return (
-        <div className="min-h-screen">
+        <div className="">
             <Header />
             <Hero />
             <Features />
