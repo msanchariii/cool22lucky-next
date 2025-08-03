@@ -97,7 +97,7 @@ const Hero = () => {
 
 const BrandonDentaCard = () => {
     return (
-        <div className="absolute w-64 bg-white rounded-xl shadow-md p-5 top-[35%] left-6 xl:left-8 hidden lg:block">
+        <div className="absolute w-[200px] bg-white rounded-xl shadow-md p-5 lg:top-[30%] xl:top-[35%] left-6 xl:left-8 hidden lg:block">
             {/* Avatar */}
             <div className="w-12 h-12 bg-gray-300 rounded-full mb-4"></div>
 
@@ -121,7 +121,7 @@ const BrandonDentaCard = () => {
 
 const PaymentCard = () => {
     return (
-        <div className="w-72 bg-white rounded-xl shadow-md p-5 absolute top-[30%] right-6 xl:right-8 hidden lg:block">
+        <div className="w-[210px] bg-white rounded-xl shadow-md p-5 -z-1 absolute top-[30%] right-6 xl:right-8 hidden lg:block">
             {/* Top Section: Avatar + Name + PayPal */}
             <div className="flex justify-between items-center mb-4">
                 <div className="flex items-center gap-3">
@@ -131,7 +131,7 @@ const PaymentCard = () => {
                         <p className="text-gray-500 text-sm">UI/UX Designer</p>
                     </div>
                 </div>
-                <FaPaypal className="text-2xl text-black" />
+                <FaPaypal className="text-xl text-black" />
             </div>
 
             {/* Divider */}
@@ -141,15 +141,11 @@ const PaymentCard = () => {
             <div className="flex justify-between text-center">
                 <div>
                     <p className="text-gray-500 text-sm">Total Cost</p>
-                    <p className="text-purple-600 font-semibold text-lg">
-                        $5,890.00
-                    </p>
+                    <p className="text-purple-600 font-semibold ">$5,890.00</p>
                 </div>
                 <div>
                     <p className="text-gray-500 text-sm">Net Pay</p>
-                    <p className="text-purple-600 font-semibold text-lg">
-                        $3,890.00
-                    </p>
+                    <p className="text-purple-600 font-semibold">$3,890.00</p>
                 </div>
             </div>
         </div>
