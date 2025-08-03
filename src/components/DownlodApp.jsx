@@ -13,7 +13,7 @@ export default function DownloadApp() {
                 {/* </div> */}
 
                 {/* Right Content */}
-                <div className="text-center  mx-auto md:text-left max-w-md flex flex-col gap-6">
+                <div className="text-center  mx-auto md:text-left max-w-md flex flex-col gap-6 py-6">
                     <h2 className="uppercase w-fit mx-auto md:mx-0 text-sm text-lavender-darkest p-1 rounded-full px-4 bg-linear-to-r from-lavender-dark to-transparent font-semibold tracking-wide">
                         Data Driven Coaching
                     </h2>

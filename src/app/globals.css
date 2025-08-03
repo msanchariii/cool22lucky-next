@@ -20,8 +20,7 @@
     --color-peacock: #89b0b2;
     --color-orange: #fa6932;
     --color-golden: #fff4ce;
-    --font-sans: var(--font-geist-sans);
-    --font-mono: var(--font-geist-mono);
+    --font-poppins: var(--font-poppins);
 }
 
 @utility flex-center {
@@ -29,6 +28,9 @@
 }
 
 @layer base {
+    body {
+        @apply font-poppins;
+    }
     section {
         @apply bg-pink-200/0 w-full mx-auto p-6 max-w-6xl mx-auto;
     }

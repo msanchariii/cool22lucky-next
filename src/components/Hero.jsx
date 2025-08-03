@@ -8,7 +8,7 @@ const Hero = () => {
             <section className="relative max-w-none min-h-screen pt-32 flex flex-col items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 lg:inset-4 -z-10">
                     <Image
-                        src="/assets/Hero.svg"
+                        src="/assets/hero.webp"
                         alt="Hero Image"
                         fill
                         className="object-cover relative inset-12 -z-10 lg:rounded-3xl"

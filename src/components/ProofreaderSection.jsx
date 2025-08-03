@@ -17,7 +17,7 @@ const IconCard = ({ icon, children }) => {
                 alt={icon}
                 width={80}
                 height={80}
-                className="object-cover"
+                className="object-cover h-18 w-18 md:h-20 md:w-20 "
             />
             <h4 className="text-xl font-medium py-4">{children}</h4>
         </div>
@@ -54,7 +54,7 @@ const ProofreaderSection = () => {
                     Proof Your Words
                 </button>
             </div>
-            <div className="mt-10 md:mt-0 md:ml-10">
+            <div className="mt-10 md:mt-0 md:ml-10 order-1 md:order-2">
                 <img
                     src="/assets/img1.png"
                     alt="Proofreading AI"
