@@ -44,7 +44,7 @@ const FAQs = () => {
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
                     {/* Left Column */}
                     <div>
-                        <p className="text-xs uppercase text-gray-500 mb-2">
+                        <p className="text-sm font-medium uppercase text-sky-dark mb-2">
                             Need Help?
                         </p>
                         <h2 className="text-4xl font-semibold mb-4">
@@ -57,7 +57,7 @@ const FAQs = () => {
                             help, feel free to reach out to our team anytime.
                         </p>
                         <div className="space-y-4 text-sm">
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center gap-3 transition-transform duration-300 hover:scale-105">
                                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center border-2 p-1 border-gray-200">
                                     <LuPhoneCall className="w-5 h-5 text-gray-600" />
                                 </div>
@@ -70,7 +70,7 @@ const FAQs = () => {
                                     </span>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center gap-3 transition-transform duration-300 hover:scale-105">
                                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center border-2 p-1 border-gray-200">
                                     <MdOutlineMail className="w-5 h-5 text-gray-600" />
                                 </div>
@@ -91,25 +91,65 @@ const FAQs = () => {
                         {faqs.map((faq, index) => (
                             <div
                                 key={index}
-                                className="border-b border-gray-300 pb-4 cursor-pointer"
+                                className={`border-b border-gray-300 pb-4 cursor-pointer transition-shadow duration-300 ${
+                                    openIndex === index ? "" : ""
+                                }`}
                                 onClick={() => toggle(index)}
                             >
                                 <div className="flex justify-between items-center text-lg font-medium">
-                                    <span>{faq.question}</span>
-                                    <span>
+                                    <span className="text-lg">
+                                        {faq.question}
+                                    </span>
+                                    <span
+                                        className="transition-transform duration-300"
+                                        style={{
+                                            display: "inline-block",
+                                            transform:
+                                                openIndex === index
+                                                    ? "rotate(180deg)"
+                                                    : "rotate(0deg)",
+                                        }}
+                                    >
                                         {openIndex === index ? "−" : "+"}
                                     </span>
                                 </div>
-                                {openIndex === index && (
-                                    <p className="mt-2 text-gray-600 text-sm">
-                                        {faq.answer}
-                                    </p>
-                                )}
+                                <div
+                                    style={{
+                                        maxHeight:
+                                            openIndex === index
+                                                ? "500px"
+                                                : "0px",
+                                        overflow: "hidden",
+                                        transition:
+                                            "max-height 0.4s cubic-bezier(0.4,0,0.2,1)",
+                                    }}
+                                >
+                                    {openIndex === index && (
+                                        <p className="mt-2 text-gray-600 text-sm animate-fade-in">
+                                            {faq.answer}
+                                        </p>
+                                    )}
+                                </div>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
+            <style jsx>{`
+                @keyframes fade-in {
+                    from {
+                        opacity: 0;
+                        transform: translateY(-8px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                .animate-fade-in {
+                    animation: fade-in 0.4s ease;
+                }
+            `}</style>
         </div>
     );
 };

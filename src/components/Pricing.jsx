@@ -53,7 +53,7 @@ const PricingPlans = () => {
                 <div className="max-w-7xl mx-auto">
                     {/* Header */}
                     <div className="text-center mb-16">
-                        <p className="text-gray-300 text-sm tracking-widest uppercase mb-4">
+                        <p className="text-peacock  font-medium tracking-widest uppercase mb-4">
                             FLEXIBLE PLANS
                         </p>
                         <h1 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">

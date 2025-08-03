@@ -15,7 +15,7 @@ const Hero = () => {
                         priority
                     />
                 </div>
-                <h1 className="text-[5rem] sm:text-[6rem] md:text-[7rem] lg:text-[6.5rem] p-2 xl:text-[9rem] leading-[1.2] font-medium text-center text-white">
+                <h1 className="text-[5rem] sm:text-[6rem] md:text-[7rem] lg:text-[6rem] p-2 xl:text-[8rem] leading-[1.2] font-medium text-center text-white">
                     AI Voice <br /> Transform <br /> Reality
                 </h1>
                 <BrandonDentaCard />
@@ -97,7 +97,7 @@ const Hero = () => {
 
 const BrandonDentaCard = () => {
     return (
-        <div className="absolute w-64 bg-white rounded-xl shadow-md p-5 top-[35%] left-8 hidden lg:block    ">
+        <div className="absolute w-64 bg-white rounded-xl shadow-md p-5 top-[35%] left-6 xl:left-8 hidden lg:block">
             {/* Avatar */}
             <div className="w-12 h-12 bg-gray-300 rounded-full mb-4"></div>
 
@@ -121,7 +121,7 @@ const BrandonDentaCard = () => {
 
 const PaymentCard = () => {
     return (
-        <div className="w-72 bg-white rounded-xl shadow-md p-5 absolute top-[30%] right-8 hidden lg:block">
+        <div className="w-72 bg-white rounded-xl shadow-md p-5 absolute top-[30%] right-6 xl:right-8 hidden lg:block">
             {/* Top Section: Avatar + Name + PayPal */}
             <div className="flex justify-between items-center mb-4">
                 <div className="flex items-center gap-3">
