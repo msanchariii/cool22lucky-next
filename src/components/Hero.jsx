@@ -15,7 +15,7 @@ const Hero = () => {
                         priority
                     />
                 </div>
-                <h1 className="text-[5rem] sm:text-[6rem] md:text-[7rem] lg:text-[6rem] p-2 xl:text-[8rem] leading-[1.2] font-medium text-center text-white">
+                <h1 className="drop-shadow-[0_0_0.5px_rgba(0,0,0,1)] text-[5rem] sm:text-[6rem] md:text-[7rem] lg:text-[6rem] p-2 xl:text-[8rem] leading-[1.2] font-medium text-center text-white">
                     AI Voice <br /> Transform <br /> Reality
                 </h1>
                 <BrandonDentaCard />
